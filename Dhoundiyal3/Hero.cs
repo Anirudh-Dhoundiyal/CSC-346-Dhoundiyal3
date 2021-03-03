@@ -15,36 +15,53 @@ using System.Threading.Tasks;
 
 namespace HeroNS
 {
-  
+
     public class Hero
     {
-        public string Name;
-        public Global.RaceType RaceType;
-        public short Health;
-        public short Protection;
-        public Global.WeaponType Weapon;
-        public Hero()
+        public string Name
         {
-            Name = "Geralt";
-            RaceType = Global.RaceType.WITCHER;
-            Health = 200;
-            Protection = 50;
-            Weapon = Global.WeaponType.AXE;
+            get;
+            set;
         }
-/*  Method: Override Cunstructor
-***************************************************** 
-* Description: Overwrites the class instance for HERO
-* Input: Void
-* Output: Void
-* IN/OUT AGGS:
-*   public string Name;
-*    public Global.RaceType RaceType;
-*    public short Health;
-*    public short Protection;
-*    public Global.WeaponType Weapon;
-* RETURN : void
-*/
-        public Hero(string name, Global.RaceType raceType, short health, short protection, Global.WeaponType weapon)
+        public Global.RaceType RaceType
+        {
+            get;
+            set;
+
+        }
+
+
+        public short Health
+        {
+            get;
+            set;
+        }
+        public short Protection
+        {
+            get;
+            set;
+        }
+
+        public Global.WeaponType Weapon
+        {
+            get;
+            set;
+        }
+
+        /*  Method: constructor
+        ***************************************************** 
+        * Description: Overwrites the class instance for HERO
+        * Input: Void
+        * Output: Void
+        * IN/OUT AGGS:
+        *   public string Name;
+        *    public Global.RaceType RaceType;
+        *    public short Health;
+        *    public short Protection;
+        *    public Global.WeaponType Weapon;
+        * RETURN : void
+        */
+        public Hero(string name = "Geralt", Global.RaceType raceType = Global.RaceType.WITCHER, short health = 200, short protection = 50, Global.WeaponType weapon = Global.WeaponType.AXE)
         {
             Name = name;
             RaceType = raceType;
@@ -52,7 +69,7 @@ namespace HeroNS
             Protection = protection;
             Weapon = weapon;
         }
-        /*  Method: Copy Cunstructor
+        /*  Method: Copy constructor
         ***************************************************** 
         * Description: copys the class instance for HERO
         * Input: Void

@@ -20,8 +20,12 @@ namespace HeroNS
         static void Main()
         {
             Hero ani = new Hero();
+            View.ViewV(ani);
             View.ViewH(ani);
-           
+
+            ani.Name = "Anirudh";
+            View.ViewV(ani);
+            View.ViewH(ani);
         }
     }
 }

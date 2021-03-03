@@ -33,6 +33,7 @@ namespace HeroNS
             Console.Write(heroH.Protection);
             Console.Write("          ");
             Console.Write(heroH.Weapon);
+            Console.WriteLine(" ");
         }
         /*  Method: Override Cunstructor
         ***************************************************** 
@@ -49,6 +50,7 @@ namespace HeroNS
         */
         public static void ViewV(Hero heroV)
         {
+            Console.WriteLine("  ");
             Console.Write("Hero:       ");
             Console.WriteLine(heroV.Name);
             Console.Write("Race:       ");
@@ -59,6 +61,7 @@ namespace HeroNS
             Console.WriteLine(heroV.Protection);
             Console.Write("Weapon:     ");
             Console.WriteLine(heroV.Weapon);
+            
         }
     }
 }
