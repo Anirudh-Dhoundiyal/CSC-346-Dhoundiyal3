@@ -23,7 +23,7 @@ namespace HeroNS
             get;
             set;
         }
-        public Global.RaceType RaceType
+        public Global.RaceType Race
         {
             get;
             set;
@@ -64,7 +64,7 @@ namespace HeroNS
         public Hero(string name = "Geralt", Global.RaceType raceType = Global.RaceType.WITCHER, short health = 200, short protection = 50, Global.WeaponType weapon = Global.WeaponType.AXE)
         {
             Name = name;
-            RaceType = raceType;
+            Race = raceType;
             Health = health;
             Protection = protection;
             Weapon = weapon;
@@ -81,7 +81,7 @@ namespace HeroNS
         public Hero(Hero copyhero)
         {
             Name = copyhero.Name;
-            RaceType = copyhero.RaceType;
+            Race = copyhero.Race;
             Health = copyhero.Health;
             Protection = copyhero.Protection;
             Weapon = copyhero.Weapon;

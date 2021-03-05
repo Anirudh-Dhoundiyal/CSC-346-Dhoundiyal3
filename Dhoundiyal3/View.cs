@@ -26,7 +26,7 @@ namespace HeroNS
             Console.WriteLine("HERO  |  RACE  |  HEALTH  |  PROTECTION  |  WEAPON ");
             Console.Write(heroH.Name);
             Console.Write("  ");
-            Console.Write(heroH.RaceType);
+            Console.Write(heroH.Race);
             Console.Write("     ");
             Console.Write(heroH.Health);
             Console.Write("         ");
@@ -51,10 +51,10 @@ namespace HeroNS
         public static void ViewV(Hero heroV)
         {
             Console.WriteLine("  ");
-            Console.Write("Hero:       ");
+            Console.Write("Hero:       " + heroV.Name);
             Console.WriteLine(heroV.Name);
             Console.Write("Race:       ");
-            Console.WriteLine(heroV.RaceType);
+            Console.WriteLine(heroV.Race);
             Console.Write("Health:     ");
             Console.WriteLine(heroV.Health);
             Console.Write("Protection: ");
